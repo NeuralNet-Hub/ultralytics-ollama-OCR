@@ -17,8 +17,6 @@ The complete solution includes:
 - **Docker support** with GPU acceleration
 - **Production-ready** inference pipeline
 
-![ALPR Demo](https://via.placeholder.com/800x400/2E8B57/FFFFFF?text=ALPR+License+Plate+Detection+Demo)
-
 ## Requirements
 
 - Python 3.8+
