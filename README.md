@@ -17,14 +17,14 @@ The complete solution includes:
 - **Docker support** with GPU acceleration
 - **Production-ready** inference pipeline
 
-## Requirements
+## 📋 Requirements
 
 - Python 3.8+
 - PyTorch with CUDA support (recommended)
 - Docker (optional, for containerized deployment)
 - Ollama server for OCR functionality
 
-## Quick Start
+## 🚀 Quick Start
 
 1. **Download the model weights:**
 ```bash
@@ -48,22 +48,23 @@ pip install -r requirements.txt
 python main.py --model alpr-yolo11s-aug.pt
 ```
 
-## Model Performance
+## 📊 Model Performance
 
 Our ALPR models have been extensively trained and validated to provide:
-
 - **🎯 High Accuracy**: Robust detection across various lighting conditions and angles
 - **⚡ Fast Inference**: Optimized for real-time applications  
 - **🌐 Versatile**: Works with different vehicle types and license plate formats
 - **📱 Easy Integration**: Compatible with existing Ultralytics workflows
 
 ### Training Metrics
+
 All training data, metrics, and experimental results are available at:
 **[WandB Project: ALPR-by-hdnh2006](https://wandb.ai/hdnh2006/ALPR-by-hdnh2006/)**
 
-## Docker Deployment
+## 🐳 Docker Deployment
 
 ### Build and Run with GPU Support
+
 ```bash
 # Build the image
 docker build -t alpr-yolo .
@@ -75,18 +76,20 @@ docker run --gpus all -p 7860:7860 alpr-yolo
 docker run --gpus all --network host alpr-yolo
 ```
 
-## Usage Examples
+## 💡 Usage Examples
 
 ### Web Interface
+
 Access the Gradio interface at `http://localhost:7860` to:
 - Upload images for license plate detection
 - Adjust confidence and IoU thresholds
 - Configure Ollama server for OCR
 - View detected plates with extracted text
 
-## Configuration
+## ⚙️ Configuration
 
 ### Ollama Server Setup
+
 The application integrates with Ollama for OCR functionality:
 
 1. **Install Ollama**: Follow instructions at [ollama.ai](https://ollama.ai)
@@ -94,11 +97,12 @@ The application integrates with Ollama for OCR functionality:
 3. **Configure server URL** in the Gradio interface
 
 ### Model Selection
+
 Available pre-trained models:
 - `alpr-yolo11s-aug.pt` - Small model, fast inference
 - Custom models supported via the web interface
 
-## File Structure
+## 📁 File Structure
 
 ```
 .
@@ -109,7 +113,7 @@ Available pre-trained models:
 └── README.md             # This file
 ```
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### Common Issues
 
@@ -127,11 +131,11 @@ Available pre-trained models:
 - Ensure good image quality and lighting
 - Consider using larger model variants
 
-## License
+## 📝 License
 
 This project is released under the **[Ultralytics License](https://github.com/ultralytics/ultralytics/blob/main/LICENSE)**, ensuring compatibility with the YOLO ecosystem while maintaining open-source accessibility.
 
-## About NeuralNet
+## 🧠 About NeuralNet
 
 [NeuralNet](https://neuralnet.solutions) is an AI software development company specializing in privacy-focused artificial intelligence solutions. Our flagship products include [PrivateGPT](https://neuralnet.solutions/privategpt), a secure and private alternative to traditional AI chatbots that keeps your data completely confidential and runs locally on your infrastructure.
 
@@ -150,4 +154,4 @@ We develop cutting-edge AI tools that prioritize:
 
 ---
 
-_Developed by **[Henry Navarro](https://github.com/hdnh2006)** - Building the future of computer vision, one model at a time._
+_Developed by_ **_[Henry Navarro](https://github.com/hdnh2006)_** _- Building the future of computer vision, one model at a time._
