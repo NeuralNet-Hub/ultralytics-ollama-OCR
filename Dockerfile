@@ -8,11 +8,11 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Copy the main application
-COPY main.py .
+# Copy all application files
+COPY . .
 
 # Expose Gradio port
 EXPOSE 7860
 
-# Set default command
-CMD ["python", "main.py", "--model", "yolo11n.pt"]
+# Set default command with your ALPR model
+CMD ["python", "main.py", "--model", "alpr-yolo11s-aug.pt"]
