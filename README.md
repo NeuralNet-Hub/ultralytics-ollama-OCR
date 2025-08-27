@@ -34,8 +34,8 @@ wget https://github.com/NeuralNet-Hub/assets/releases/download/v0.0.1/alpr-yolo1
 
 2. **Clone the inference repository:**
 ```bash
-git clone https://github.com/NeuralNet-Hub/alpr-yolo-gradio
-cd alpr-yolo-gradio
+git clone https://github.com/NeuralNet-Hub/ultralytics-ollama-OCR.git
+cd ultralytics-ollama-OCR
 ```
 
 3. **Install dependencies:**
