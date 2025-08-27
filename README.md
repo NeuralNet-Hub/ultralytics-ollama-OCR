@@ -67,13 +67,13 @@ All training data, metrics, and experimental results are available at:
 
 ```bash
 # Build the image
-docker build -t alpr-yolo .
+docker build -t yolo-ollama-ocr .
 
 # Run with GPU support
-docker run --gpus all -p 7860:7860 alpr-yolo
+docker run --gpus all -p 7860:7860 yolo-ollama-ocr
 
 # Run with host network (for local Ollama server)
-docker run --gpus all --network host alpr-yolo
+docker run --gpus all --network host yolo-ollama-ocr
 ```
 
 ## 💡 Usage Examples
