@@ -26,16 +26,16 @@ The complete solution includes:
 
 ## 🚀 Quick Start
 
-1. **Download the model weights:**
-```bash
-# Download from our latest release
-wget https://github.com/NeuralNet-Hub/assets/releases/download/v0.0.1/alpr-yolo11s-aug.pt
-```
-
-2. **Clone the inference repository:**
+1. **Clone the inference repository:**
 ```bash
 git clone https://github.com/NeuralNet-Hub/ultralytics-ollama-OCR.git
 cd ultralytics-ollama-OCR
+```
+
+2. **Download the model weights:**
+```bash
+# Download from our latest release
+wget https://github.com/NeuralNet-Hub/assets/releases/download/v0.0.1/alpr-yolo11s-aug.pt
 ```
 
 3. **Install dependencies:**
